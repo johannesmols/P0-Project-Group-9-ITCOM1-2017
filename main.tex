@@ -1,7 +1,22 @@
-\documentclass{article}
+\documentclass[12p]{article}
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
 \usepackage{graphicx}
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{pics/}} % Specifies the directory where pictures are stored
 
 \begin{document}
 
@@ -87,11 +102,131 @@
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
-%------------------------------------------------
-%	References
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % Major section
+
+Example citation \cite{Figueredo:2009dg}.
+
 %------------------------------------------------
 
-\bibliographystyle{plain}
-\bibliography{references}
+\subsection{Subsection 1} % Sub-section
+
+\lipsum[1] % Dummy text
+
+%------------------------------------------------
+
+\subsection{Subsection 2} % Sub-section
+
+\lipsum[2] % Dummy text
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 1} % Sub-sub-section
+
+\lipsum[3] % Dummy text
+
+\begin{figure}[H] % Example image
+\center{\includegraphics[width=0.1\linewidth]{AAU_Logo.png}}
+\caption{Example image.}
+\label{fig:speciation}
+\end{figure}
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 2} % Sub-sub-section
+
+\lipsum[4] % Dummy text
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Content Section} % Major section
+
+\lipsum[5] % Dummy text
+
+%------------------------------------------------
+
+\subsection{Subsection 1} % Sub-section
+
+\subsubsection{Subsubsection 1} % Sub-sub-section
+
+\lipsum[6] % Dummy text
+
+%------------------------------------------------
+
+\subsubsection{Subsubsection 2} % Sub-sub-section
+
+\begin{description} % Numbered list example
+
+\item[First] \hfill \\
+\lipsum[9] % Dummy text
+
+\item[Second] \hfill \\
+\lipsum[10] % Dummy text
+
+\item[Third] \hfill \\
+\lipsum[11] % Dummy text
+
+\end{description} 
+
+%----------------------------------------------------------------------------------------
+%	MAJOR SECTION X - TEMPLATE - UNCOMMENT AND FILL IN
+%----------------------------------------------------------------------------------------
+
+%\section{Content Section}
+
+%\subsection{Subsection 1} % Sub-section
+
+% Content
+
+%------------------------------------------------
+
+%\subsection{Subsection 2} % Sub-section
+
+% Content
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\section{Conclusion} % Major section
+
+\lipsum[12-13]
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{9}
+
+    \bibitem{latexcompanion} 
+    Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+    \textit{The \LaTeX\ Companion}. 
+    Addison-Wesley, Reading, Massachusetts, 1993.
+     
+    \bibitem{einstein} 
+    Albert Einstein. 
+    \textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+    [\textit{On the electrodynamics of moving bodies}]. 
+    Annalen der Physik, 322(10):891–921, 1905.
+     
+    \bibitem{knuthwebsite} 
+    Knuth: Computers and Typesetting,
+    \\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+    
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{plain}
+%\bibliography{references}
 
 \end{document}
