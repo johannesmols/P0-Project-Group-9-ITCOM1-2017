@@ -12,6 +12,12 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
+\usepackage[
+    style=numeric,
+    sorting=none
+    ]{biblatex}
+\addbibresource{references.bib}
+
 \linespread{1.2} % Line spacing
 
 %\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
@@ -21,8 +27,6 @@
 \usepackage[parfill]{parskip} % Makes sure to put line breaks in between paragraphs and have no indentation
 
 \begin{document}
-
-\newcommand{\customparagraph}[1]{\paragraph{#1}\mbox{}\\}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines
 \newcommand{\SlimHRule}{\rule{\linewidth}{0.25mm}} % Defines a new command for horizontal lines
@@ -72,6 +76,7 @@
     \begin{flushleft} \large
     \emph{Authors}\\
         Hamza \textsc{Al'akhir} \\
+        Patryk \textsc{Gabryszak} \\
     	Gustav \textsc{Jørgensen} \\
     	Marius \textsc{Lungu} \\
     	Johannes \textsc{Mols} \\
@@ -85,6 +90,7 @@
     \emph{Study Numbers} \\
         - \\
         - \\
+        20173797 \\
         - \\
         20174921 \\
         - \\
@@ -115,7 +121,7 @@
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\section{Introduction and Problem Formulation}
+\section{Introduction}
 
 \begin{center}
 \vspace{1em}
@@ -125,9 +131,9 @@
 \vspace{1em}
 \end{center}
 
-The above problem formulation focuses on a common problem amongst mostly younger people in today's society. During night times, most shops in Copenhagen are closed and bars are either too far away or too expensive, or both. Furthermore, most parties happen at private locations like apartments, where you can easily run out of supplies or you are are simply too lazy to go to a shop and buy said supplies. This is where our service steps in. We provide a fast, reliable and secure service to deliver a broad variety of party supplies directly to the customers doorstep. We make sure, the party never stops! 
+The above problem formulation focuses on a common problem among mostly younger people in today's society. During night times, most shops in Copenhagen are closed and bars are either too far away or too expensive, or both. Furthermore, most parties happen at private locations like apartments, where you can easily run out of supplies or you are are simply too lazy to go to a shop and buy said supplies. This is where our service steps in. We provide a fast, reliable and secure service to deliver a broad variety of party supplies directly to the customers doorstep. We make sure, the party never stops! 
 \\ \\
-Our product includes an easy ordering procedure through our website and a fast delivery by one of our employees. The supplies offered on our website are from wide variety. We offer alcoholic beverages ranging from domestic and foreign beer to wine, vodka, whiskey and more, but also non-alcoholic beverages like coke (not the drug) and energy drinks. Furthermore, we are offering a great amount of party games like plastic cups for beer pong, card games, beer bongs and more. Alongside all of this, we also offer snacks and cigarettes. Special bundles for events like the \emph{Oktoberfest} are also included in our service.
+Our product includes an easy ordering procedure through our website and a fast delivery by one of our employees. The supplies offered on our website are from wide variety. We offer alcoholic beverages ranging from domestic and foreign beer to wine, vodka, whiskey and more, but also non-alcoholic beverages like coke (not the drug) and energy drinks. Furthermore, we are offering a great amount of party games like beer pong, card games, beer bongs and more. Alongside all of this, we also offer snacks and cigarettes. Special bundles for events like the \emph{Oktoberfest} are also included in our service.
 \\ \\
 Our target audience is mainly younger generations, since they have the highest quantity of parties and also drink a lot more alcohol than older generations. We are hoping to especially appeal this audience with our variety of party games and special bundles. Nonetheless, anyone above the legal age is of course more than welcome to use our service.
 
@@ -141,6 +147,22 @@ Our target audience is mainly younger generations, since they have the highest q
 %------------------------------------------------
 
 \subsection{State of the art}
+
+\subsubsection{Saucey \cite{Saucey}}
+
+\subsubsection{alkoXpress \cite{alkoXpress}}
+This website is for danish citizens in the northerly region of Zealand and they got a desktop interface which is easy to use. The design of the website is pretty simple as well. The usage of pictures and effects are minimized. At the top of the website, they have different kinds of “bars” which lets you choose what drink you want. For example the first bar is “Pakker” or “Package”. This will send you into a new page, where you can see all the different packages.
+\\ \\
+Beyond alcohol you can also buy cigarettes and accessories. The accessories are chips, cups and shot glasses etc. The order system is basic and easy to use, and if you have any kind of coupons to the website you can get some percentages off the price. 
+Every drink is described when you click on them, for example the Verdi Pomegranate 
+“Gentle - sparkling - seductive - Italian.
+Fresh with a comfortable well-balanced sweetness and a clean and light taste of pomegranate.
+A beautiful sparkling tin based on natural ingredients.
+Verdi Sparkletini is gluten-free”.
+\\ \\
+The package system is the way they try to differentiate from other alcohol delivery websites in Denmark. The audience of this website is younger people because of the names they use on the packages, such like “The king” “The mexican” and “Beerpong”. 
+
+\subsubsection{Allo Apéro Night\cite{alloAperoNight}}
 
 %------------------------------------------------
 
@@ -179,8 +201,9 @@ Our target audience is mainly younger generations, since they have the highest q
 %----------------------------------------------------------------------------------------
 
 \newpage
-\bibliographystyle{plain}
-\bibliography{references}
+\printbibliography
+%\bibliographystyle{unsrt}
+%\bibliography{references}
 
 %----------------------------------------------------------------------------------------
 
