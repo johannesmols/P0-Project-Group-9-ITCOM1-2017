@@ -4,13 +4,13 @@
 \geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
 
 \usepackage[utf8]{inputenc}
-
 \usepackage{graphicx}
-
 \usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
 \usepackage{wrapfig} % Allows in-line images such as the example fish picture
-
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{fancyhdr}
+\usepackage[parfill]{parskip} % Makes sure to put line breaks in between paragraphs and have no indentation
+\usepackage{dirtytalk} % Used for quotations (\say{quote}
 
 \usepackage[
     style=numeric,
@@ -24,7 +24,7 @@
 
 \graphicspath{{pics/}} % Specifies the directory where pictures are stored
 
-\usepackage[parfill]{parskip} % Makes sure to put line breaks in between paragraphs and have no indentation
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
@@ -126,16 +126,16 @@
 \begin{center}
 \vspace{1em}
 \SlimHRule\\[0.1cm]
-\Large{How can we make party supplies more accessible during night times, using the benefits of an easy-to-use ordering website and fast delivery service, and therefore provide an awesome party experience in the greater Copenhagen area?}
+\Large{How can we make party supplies more accessible during night times, using the benefits of an easy-to-use ordering website and fast delivery service, and therefore provide an awesome party experience in Copenhagen and greater Copenhagen area?}
 \SlimHRule\\[0.1cm]
 \vspace{1em}
 \end{center}
 
-The above problem formulation focuses on a common problem among mostly younger people in today's society. During night times, most shops in Copenhagen are closed and bars are either too far away or too expensive, or both. Furthermore, most parties happen at private locations like apartments, where you can easily run out of supplies or you are are simply too lazy to go to a shop and buy said supplies. This is where our service steps in. We provide a fast, reliable and secure service to deliver a broad variety of party supplies directly to the customers doorstep. We make sure, the party never stops! 
+The above problem formulation focuses on a common problem among mostly younger people in today's society. During night times, most shops in Copenhagen are closed and bars are either too far away or too expensive, or both. Furthermore, most parties happen at private locations like apartments, where you can easily run out of supplies or you are simply too lazy to go to a shop and buy said supplies. This is where our service steps in. We provide a fast, reliable and secure service to deliver a broad variety of party supplies directly to the customer's doorstep. We make sure, the party never stops! 
 \\ \\
-Our product includes an easy ordering procedure through our website and a fast delivery by one of our employees. The supplies offered on our website are from wide variety. We offer alcoholic beverages ranging from domestic and foreign beer to wine, vodka, whiskey and more, but also non-alcoholic beverages like coke (not the drug) and energy drinks. Furthermore, we are offering a great amount of party games like beer pong, card games, beer bongs and more. Alongside all of this, we also offer snacks and cigarettes. Special bundles for events like the \emph{Oktoberfest} are also included in our service.
+Our product includes an easy ordering procedure through our website and a fast delivery by one of our employees. The supplies offered on our website are from a wide variety. We offer alcoholic beverages ranging from domestic and foreign beer to wine, vodka, whiskey and more, but also non-alcoholic beverages like coke (not the drug) and energy drinks. Furthermore, we are offering a great amount of party games like beer pong, card games, beer bongs and more. Alongside all of this, we also offer snacks and cigarettes. Special bundles for events like the \emph{Oktoberfest} are also included in our service.
 \\ \\
-Our target audience is mainly younger generations, since they have the highest quantity of parties and also drink a lot more alcohol than older generations. We are hoping to especially appeal this audience with our variety of party games and special bundles. Nonetheless, anyone above the legal age is of course more than welcome to use our service.
+Our target audience is mainly younger generations since they have the highest quantity of parties and also drink a lot more alcohol than older generations. We are hoping to especially appeal this audience with our variety of party games and special bundles. Nonetheless, anyone above the legal age is of course more than welcome to use our service.
 
 %----------------------------------------------------------------------------------------
 %	EMPIRICAL DATA
@@ -151,18 +151,27 @@ Our target audience is mainly younger generations, since they have the highest q
 \subsubsection{Saucey \cite{Saucey}}
 
 \subsubsection{alkoXpress \cite{alkoXpress}}
-This website is for danish citizens in the northerly region of Zealand and they got a desktop interface which is easy to use. The design of the website is pretty simple as well. The usage of pictures and effects are minimized. At the top of the website, they have different kinds of “bars” which lets you choose what drink you want. For example the first bar is “Pakker” or “Package”. This will send you into a new page, where you can see all the different packages.
+This website is for Danish citizens in the northerly region of Zealand and they got a desktop interface which is easy to use. The design of the website is pretty simple as well. The usage of pictures and effects are minimized. At the top of the website, they have different kinds of “bars” which let you choose what drink you want. For example, the first bar is “Pakker” or “Package”. This will send you to a new page, where you can see all the different packages. 
 \\ \\
-Beyond alcohol you can also buy cigarettes and accessories. The accessories are chips, cups and shot glasses etc. The order system is basic and easy to use, and if you have any kind of coupons to the website you can get some percentages off the price. 
-Every drink is described when you click on them, for example the Verdi Pomegranate 
+Beyond alcohol, you can also buy cigarettes and accessories. The accessories are chips, cups and shot glasses etc. The order system is basic and easy to use, and if you have any kind of coupons to the website you can get some percentages off the price. 
+Every drink is described when you click on them, for example, the Verdi Pomegranate 
 “Gentle - sparkling - seductive - Italian.
 Fresh with a comfortable well-balanced sweetness and a clean and light taste of pomegranate.
 A beautiful sparkling tin based on natural ingredients.
 Verdi Sparkletini is gluten-free”.
 \\ \\
-The package system is the way they try to differentiate from other alcohol delivery websites in Denmark. The audience of this website is younger people because of the names they use on the packages, such like “The king” “The mexican” and “Beerpong”. 
-
-\subsubsection{Allo Apéro Night\cite{alloAperoNight}}
+The package system is the way they try to differentiate from other alcohol delivery websites in Denmark. The audience of this website is younger people because of the names they use on the packages, such like “The King” “The Mexican” and “Beer pong”. 
+\subsubsection{Allo Apéro Night \cite{alloAperoNight}}
+The website offers service for french people located in Paris and greater Paris.
+It’s purpose is very simple, delivering alcohol and drinks from 8pm to 6am.
+The layout of the website is really simple and clean. They display a catalogue, which is very interactive, directly on the main page. They offer different kinds of alcohol, but also salads, accessories and soft drinks. The website has a dark themed vibe, that gives the users a sensation of premium services.
+On the other hand, the lower part of the website is not well designed it and needs further polishing.
+Their products are displayed in different categories such as beer, vodka, champagne, vine and so on.
+When you click on one of them, you can see which brands they offer and there is a little description of the product.
+The buying process is very generic. It’s the usual e-basket system, where you add your goods to the basket and then you have two options: either continue shopping or buy the goods.
+You can also apply promotion codes.
+The logo is very  simple, they have a catch phrase, which is that they deliver in 30 minutes maximum and their main emblem is the Eiffel tower.
+Their consumer base is pretty large, ranging from 18 to 50 years of age, since shops close very early in Paris and there is no 24h super market.
 
 %------------------------------------------------
 
@@ -202,8 +211,6 @@ The package system is the way they try to differentiate from other alcohol deliv
 
 \newpage
 \printbibliography
-%\bibliographystyle{unsrt}
-%\bibliography{references}
 
 %----------------------------------------------------------------------------------------
 
