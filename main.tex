@@ -11,6 +11,9 @@
 \usepackage{fancyhdr}
 \usepackage[parfill]{parskip} % Makes sure to put line breaks in between paragraphs and have no indentation
 \usepackage{dirtytalk} % Used for quotations (\say{quote}
+\usepackage[toc,page]{appendix}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \usepackage[
     style=numeric,
@@ -411,10 +414,10 @@ This section will help us deliver a better product by analysing the market optio
 
 \begin{figure}[h]
     \center
-    \includegraphics[width=0.6\textwidth]{4p}\\
+    \includegraphics[width=0.6\textwidth]{4p}
+    \label{PPPP}
+    \caption{The four P's}
 \end{figure}
-
-\label{PPPP}
 
 \textbf{Product}
 
@@ -473,7 +476,7 @@ The target market is ideal since students like to play hard and party and since 
 %----------------------------------------------------------------------------------------
 
 \newpage
-\section{Documentation}
+\section{Process flow}
 
 \subsection{WordPress}
 
@@ -515,6 +518,117 @@ To make the main page with the four categories more appealing, we created differ
 Each product image has a squared image size, to fit into the product grid. Most of the images on our website are from \texttt{www.bevco.dk} and we simply changed the background color to the previously described light gray. For some pictures, this was a bit more difficult, because the color of the glass bottles are very similar and the Photoshop filling algorithm could  not differentiate. This was solved by manually selecting the background and then filling in the color.
 
 %----------------------------------------------------------------------------------------
+%	Documentation
+%----------------------------------------------------------------------------------------
+
+\newpage
+\section{Documentation}
+\subsection{How to add a product}
+In order to add a new product to our website, we must login on the website as an admin. Afterwards we need to go to the dashboard, where you manipulate different parts of website.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{1.png}
+    \caption{Login}
+    \label{fig:login}
+\end{figure}
+\\
+Now that we are on the website dashboard, where we can add a new product. As shown below, we can find all the categories we want to manipulate on the left side of the website.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{2.png}
+    \caption{Categories}
+    \label{fig:wordpress_categories}
+\end{figure}
+\\
+As shown in the picture, in order to add a new product, we need to go to "Products $\rightarrow$ Add new". Afterwards you will be transferred to the "Add New Product" wordpress page.
+%------------------------------------------------
+\newpage %Remove if something changes
+%------------------------------------------------
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{3.png}
+    \caption{Add new product}
+    \label{fig:wordpress_add_new_product}
+\end{figure}
+This page gives you the possibility to add a new product. As seen on the top of the page, you need to name the product, for example “Carlsberg” or “Smirnoff Vodka”. In the middle of the picture you can add a certain price for the product. At the right side of the website, you need to choose in which category your product will be, for example Alcohol, Games etc. Further down you can add a image of the product so you can see the product on the website like this.
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{4.png}
+    \caption{Example Products}
+    \label{fig:wordpress_example_products}
+\end{figure}
+
+%------------------------------------------------
+
+\newpage
+\subsection{How to add a sale price}
+In order to put a sale price on the product, you either do that while adding a new product, and you write the sale price below the usual price, as shown in the picture below.
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{5.png}
+    \caption{Setting a sale price}
+    \label{fig:wordpress_sale_price}
+\end{figure}
+\\
+After you insert the price, you just press publish product in top right corner of the page:
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{6.png}
+    \caption{Publishing a product}
+    \label{fig:wordpress_publish_product}
+\end{figure}
+\\
+In case of editing an existing product, you go to the Products section from the left bar of the dashboard:
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.15\textwidth]{7.png}
+    \caption{Dashboard}
+    \label{fig:wordpress_dashboard_products}
+\end{figure}
+%------------------------------------------------
+\newpage %Remove if something changes
+%------------------------------------------------
+After you will get all existing products from your shop. You need to choose one of the product and press Quick Edit. Afterwards, the page will pop-up you a quick edit page where you can change fast some information about your product. In order to insert the sale price, you need to put the price in the Sale field and press Update as shown in the picture.
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.85\textwidth]{8.png}
+    \caption{Quick Edit}
+    \label{fig:wordpress_quick_edit}
+\end{figure}
+\\
+\subsection{How to add to the cart}
+In order to add to the cart, you need to go the products page in the shop. Afterwards, you need to choose the desired product and you need to hover on it (put the mouse on the product). A small button will pop-up “Add to cart”. You need to press it and it will automatically add it to your existing cart. If you want to change the quantity, you can do it from the cart that pop-ups when you press add to cart or when you press the cart button in the top right corner of the page.
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{9.png}
+    \caption{Adding a product to the cart}
+    \label{fig:wordpress_add_to_cart}
+\end{figure}
+\\
+\subsection{How to checkout}
+In order to checkout, you either press Checkout Button from the Cart bar when you press the cart button in the top-right or while you add things to the cart, or you press Proceed to checkout from the cart page (accessed when View cart button is pressed) and you will be redirected to the checkout page. In the checkout page you should insert all your credentials, including name,last name, telephone number, e-mail (to send the receipt) and maybe additional notes to the manager/driver. 
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{10.png}
+    \caption{Checkout}
+    \label{fig:wordpress_checkout}
+\end{figure}
+\\
+\newpage
+\subsection{How to pay}
+After you are finished with the checkout credentials, you need to pay through PayPal. You press Proceed to PayPal button, that will redirect you to the PayPal payment page. There, you just follow the steps showed by PayPal page. After the payment has been confirmed, you will be forward back to our website.
+\\
+\includegraphics[width=0.5\textwidth]{11.png}
+\includegraphics[width=0.5\textwidth]{12.png}
+
+%----------------------------------------------------------------------------------------
 %	CONCLUSION
 %----------------------------------------------------------------------------------------
 
@@ -529,5 +643,13 @@ Each product image has a squared image size, to fit into the product grid. Most 
 \printbibliography[heading=bibintoc,title={References}]
 
 %----------------------------------------------------------------------------------------
+%	APPENDIX
+%----------------------------------------------------------------------------------------
+
+\newpage
+\appendix
+\section{Appendix}
+
+%------------------------------------------------
 
 \end{document}
