@@ -523,7 +523,7 @@ As we decided which Content-Management System we will use, we started to find a 
 
 \textbf{FTP:}
 \\
-When we have got the credentials from our host, including SQL, FTP, Admin-panel credentials, we had started to make a FTP connection in order to install the wordpress. We had studied some information about the FTP connection, and with the credentials we have got the possibility to connect to the WebFTP, an FTP-client provided by the host company. This FTP had some issues, for example you can’t connect more than one person at a time or transfer multiple files simultaneously from your computer. Also, the files transferred sometimes got corrupted, so our decision was to install another local FTP-Client that helps to connect to the host multiple users at once. We chose FileZilla, one of the most used and safe FTP-client. After the installation, we have made made our first successful connection to our host. Another issue we have encountered is that while trying to connect to the host, we have received an “Access Denied” text. After reading our host documentation, we have understood that we need to unlock the user from the admin panel in order to make a connection, and it’s made for safety reasons. Also, the access for the user it’s limited only for 12 hours, after this time, you need to unlock it again. \\
+When we have got the credentials from our host, including SQL \cite{mySQL}, FTP \cite{FTP}, Admin-panel credentials, we had started to make a FTP connection in order to install the wordpress. We had studied some information about the FTP connection, and with the credentials we have got the possibility to connect to the WebFTP, an FTP-client provided by the host company. This FTP had some issues, for example you can’t connect more than one person at a time or transfer multiple files simultaneously from your computer. Also, the files transferred sometimes got corrupted, so our decision was to install another local FTP-Client that helps to connect to the host multiple users at once. We chose FileZilla, one of the most used and safe FTP-client \cite{FileZilla}. After the installation, we have made made our first successful connection to our host. Another issue we have encountered is that while trying to connect to the host, we have received an “Access Denied” text. After reading our host documentation, we have understood that we need to unlock the user from the admin panel in order to make a connection, and it’s made for safety reasons. Also, the access for the user it’s limited only for 12 hours, after this time, you need to unlock it again. \\
 
 \textbf{MySQL Databases:}
 \\
@@ -560,8 +560,41 @@ Each product image has a squared image size, to fit into the product grid. Most 
     \label{fig:main_page}
 \end{figure}
 
+%------------------------------------------------
+
+\subsection{About Page}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{about_page}
+    \caption{The "About" page}
+    \label{fig:about_page}
+\end{figure}
+
+This page is something, every website has. It tells the user basic information about the company, what it does and who is behind it. The page is an edited version of the default "About" page of the theme. Both layout and content are created with the \emph{Visual Composer}, which can be seen in Figure \ref{fig:visual_composer}. With this, it is very easy to implement different kinds of elements on a website, since Wordpress has pre-built widgets like text and image components, but also more advanced widgets like Google Maps (can be seen in \ref{ContactPage}) or charts. As you can see in Figure \ref{fig:about_page}, there are rounded images for each team member. This is also a feature of Wordpress. There is a special category in the Dashboard, where you can add team members and attach information to them. We simply used this feature to display our names on the website, but nothing more. The image for each member is simply a default image, because we didn't have appropriate pictures at hand. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{visual_composer}
+    \caption{Visual Composer}
+    \label{fig:visual_composer}
+\end{figure}
+
+%------------------------------------------------
+
+\subsection{Contact Page} \label{ContactPage}
+
+This page is similar to the about page, since it also contains the address of Aalborg University Copenhagen. The difference here is, that it also contains the aforementioned Google Maps widget. With our current settings, it shows the university from the \emph{Satellite} mode on the zoom level 18 of 20. In this mode, Google Maps automatically switches to the 3D mode, which makes the display look like a photograph of the university from above. We all liked this more than the standard map, so we kept it. Normally, the widget also displays a red location marker. We did not want this, because it looked silly on the 3D satellite view. Luckily, it is possible to define custom markers, and we removed the marker by simply setting the custom marker to a 1 by 1 PNG file with a transparent pixel (Alpha: 0). A screenshot of the contact page can be seen in Figure \ref{fig:contact_page}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{contact_page}
+    \caption{The "Contact" page}
+    \label{fig:contact_page}
+\end{figure}
+
 %----------------------------------------------------------------------------------------
-%	Documentation
+%	DOCUMENTATION
 %----------------------------------------------------------------------------------------
 
 \newpage
